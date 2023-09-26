@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaseStudy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700"
+    />
+    <script
+      src="https://kit.fontawesome.com/034bf18d2b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul>
+        <li class="list">
+          <a href="/#section--home"
+            ><i class="icon--nav fa-solid fa-house"></i
+          ></a>
+        </li>
+        <li class="list">
+          <a href="/#section--content"
+            ><i class="icon--nav fa-solid fa-image"></i
+          ></a>
+        </li>
+        <li class="list">
+          <a href="/#section--form"
+            ><i class="icon--nav fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section id="section--home" class="section">
+        <div class="container">
+          <div class="insta--con">
+            <div class="insta--head">
+              <div class="insta--left">
+                <img
+                  src="https://i.pinimg.com/564x/82/c2/e6/82c2e6bfa0c1df03bac636d5aeab8400.jpg"
+                  alt=""
+                />
+                <h3>Tsumugi Kotobuki</h3>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="insta--img">
+              <img src="./assets/mugi_01.jpg" alt="" />
+            </div>
+            <div class="insta--body">
+              <div class="insta--icons">
+                <ul>
+                  <li><i class="fa-regular fa-heart"></i></li>
+                  <li><i class="fa-regular fa-comment"></i></li>
+                  <li><i class="fa-regular fa-paper-plane"></i></li>
+                </ul>
+                <div class="icon--con">
+                  <i class="icon fa-regular fa-bookmark"></i>
+                  <i class="icon fa-solid fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="insta--text">
+                <h4>960,701 likes</h4>
+                <p>Tsumugi Kotobuki stolen again!!! <span>...more</span></p>
+                <span>View all 430 comments</span>
+              </div>
+            </div>
+          </div>
+          <img src="./assets/mugi_06.png" alt="" draggable="false" />
+        </div>
+      </section>
+      <section id="section--content" class="section">
+        <div class="content--con">
+          <div id="content--image"></div>
+          <div id="content--body"></div>
+        </div>
+      </section>
+      <section class="section--slider">
+        <div class="slider">
+          <div class="slide-track"></div>
+        </div>
+      </section>
+      <section id="section--form" class="section">
+        <div class="container--comment--head">
+          <h1>Insterested in my works?</h1>
+          <p>
+            Leave a Comment here or send me a Message on my Email.
+            <span>taduranjushua2@gmail.com</span>
+          </p>
+        </div>
+        <div class="container--comment">
+          <form action="#">
+            <label for="name">Name <span class="required">*</span></label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Type Name here"
+              required
+            />
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Type Email here"
+              required
+            />
+            <label for="comment">Comment <span class="required">*</span></label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="5"
+              placeholder="Type Comment here"
+              required
+            ></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+        <img src="./assets/mugi_05.png" alt="" />
+      </section>
+    </main>
+    <div class="music">
+      <div class="music--image">
+        <img
+          src="https://i.pinimg.com/564x/9b/e0/15/9be015ec8e4805c026de745058032638.jpg"
+          alt=""
+        />
+      </div>
+      <div class="music--body">
+        <h3>Honey Sweet Tea Time</h3>
+        <p>Tsumugi Kotobuki (Minako Kotobuki)</p>
+        <audio id="song" autoplay="false">
+          <source src="./assets/" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="music--progress" />
+        <div class="controls">
+          <span id="start--duration"></span>
+          <div class="controls--icons">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()">
+              <i id="ctrlIcon" class="fa-solid fa-play"></i>
+            </div>
+            <div><i class="fa-solid fa-forward"></i></div>
+          </div>
+          <span id="end--duration"></span>
+        </div>
+      </div>
+    </div>
+    <div class="introduction--con">
+      <div class="introduction">
+        <div class="introduction--body">
+          <h4>Hello, hello!</h4>
+          <span>K-on! けいおん!</span>
+          <p>
+            I'm Tsumugi Kotobuki, but you can call me Mugi-chan, the keyboardist
+            of the Light Music Club. It's a pleasure to meet you. Yoroshiku
+            onegaishimasu!
+          </p>
+        </div>
+        <div class="introduction--img">
+          <img
+            src="https://i.pinimg.com/736x/6b/d1/60/6bd160f4bc0a0346f20798233842797a.jpg"
+            alt=""
+          />
+        </div>
+        <div class="introduction--icon"><i class="fa-solid fa-pencil"></i></div>
+      </div>
+    </div>
+    <script></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
